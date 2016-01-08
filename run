@@ -1,0 +1,3 @@
+#!/bin/bash
+pdflatex solucoes.tex 
+gnome-open solucoes.pdf

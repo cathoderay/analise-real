@@ -1,0 +1,41 @@
+\documentclass[11pt,a4paper]{report} 
+\usepackage[portuges]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{indentfirst}
+\newtheorem{lema}{letter}
+\newtheorem{corolario}{Corolario}
+\newtheorem{teorema}{Teorema}
+\renewcommand\thesection{\arabic{section}}
+\graphicspath{{images//}}
+
+
+\title{Soluções do livro "Curso de Análise" vol. 1}
+\author{Ronald A. Kaiser}
+
+
+\begin{document}
+    %\maketitle
+    %\newpage
+    
+    \section{Capítulo 1}
+    \subsection{Questão 1}
+    \begin{proof}
+    Para demonstrarmos que $X$ = $A \cup B$, provaremos que \textbf{1.} $X \subset (A \cup B)$ e \textbf{2.} $(A \cup B) \subset X$.
+
+    \paragraph{1.}
+    Sabemos que $\forall A$ e $\forall B$, $A \subset (A \cup B)$ e $B \subset (A \cup B)$. 
+    Da 2$^{a}$ hipótese, $A \subset (A \cup B)$ e $B \subset (A \cup B) \Rightarrow X \subset (A \cup B)$.
+
+    \paragraph{2.}
+    Da 1$^{a}$ hipótese, $x \in A \Rightarrow x \in X$ e $y \in B \Rightarrow y \in X$. Assim, todo elemento de A ou de B também pertence a X. Mais formalmente: $z \in A$ ou $z \in B \Rightarrow z \in X$. Portanto, ($A \cup B) \subset X$.
+
+    \paragraph{}
+    De \textbf{1.} e \textbf{2.}, $X$ = $(A \cup B)$.
+    \end{proof}
+
+        
+\end{document}
+
