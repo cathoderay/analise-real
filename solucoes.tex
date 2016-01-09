@@ -2,13 +2,14 @@
 \usepackage[portuges]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
-\usepackage{amsthm}
+\usepackage{amsthm,amssymb}
 \usepackage{amsfonts}
 \usepackage{indentfirst}
 \newtheorem{lema}{letter}
 \newtheorem{corolario}{Corolario}
 \newtheorem{teorema}{Teorema}
 \renewcommand\thesection{\arabic{section}}
+\renewcommand{\qedsymbol}{\rule{0.7em}{0.7em}}
 \graphicspath{{images//}}
 
 
@@ -17,24 +18,29 @@
 
 
 \begin{document}
-    %\maketitle
-    %\newpage
+    \maketitle
+    \newpage
     
+    \paragraph{Notas}
+    As soluções aqui apresentadas não contém seus respectivos enunciados. Algumas hipóteses fornecidas no livro não são enunciadas aqui, mas são utilizadas em algumas demonstrações. O leitor atento não deve ter dificuldades para acompanhar as soluções. Caso tenha alguma dúvida, recorra à obra original "Curso de análise" (vol. 1) de Elon Lages Lima.
+
     \section{Capítulo 1}
+
     \subsection{Questão 1}
     \begin{proof}
-    Para demonstrarmos que $X$ = $A \cup B$, provaremos que \textbf{1.} $X \subset (A \cup B)$ e \textbf{2.} $(A \cup B) \subset X$.
+    Para demonstrarmos que $X = A \cup B$, provaremos que \textbf{1.} $X \subset (A \cup B)$ e \textbf{2.} $(A \cup B) \subset X$.
 
     \paragraph{1.}
     Sabemos que $\forall A$ e $\forall B$, $A \subset (A \cup B)$ e $B \subset (A \cup B)$. 
     Da 2$^a$ hipótese, $A \subset (A \cup B)$ e $B \subset (A \cup B) \Rightarrow X \subset (A \cup B)$.
 
     \paragraph{2.}
-    Da 1$^a$ hipótese, $x \in A \Rightarrow x \in X$ e $y \in B \Rightarrow y \in X$. Assim, todo elemento de A ou de B também pertence a X. Mais formalmente: $z \in A$ ou $z \in B \Rightarrow z \in X$. Portanto, ($A \cup B) \subset X$.
+    A partir da 1$^a$ hipótese e da definição de inclusão, $x \in A \Rightarrow x \in X$ e $y \in B \Rightarrow y \in X$. Assim, todo elemento de A ou de B também pertence a X. Mais formalmente: $z \in A$ ou $z \in B \Rightarrow z \in X$, e  pela definição de união, $z \in (A \cup B) \Rightarrow z \in X$. Portanto, $(A \cup B) \subset X$.
 
     \paragraph{}
-    De \textbf{1.} e \textbf{2.}, $X$ = $(A \cup B)$.
+    De \textbf{1.} e \textbf{2.}, $X = (A \cup B)$.
     \end{proof}
+
 
     \subsection{Questão 2}
     \paragraph{Enunciado}
@@ -49,14 +55,28 @@
     Para demonstrarmos que $X = A \cap B$, provaremos que \textbf{1.} $X \subset (A \cap B)$ e \textbf{2.} $(A \cap B) \subset X$.
 
     \paragraph{1.}
-    Da 1$^a$ hipótese, segue que: $x \in X \Rightarrow x \in A$ e $x \in X \Rightarrow x \in B$. Assim, todo elemento de X pertence também aos conjuntos A e B. Portanto, $x \in X \Rightarrow x \in A$ e $x \in B$. Logo, $x \in X \Rightarrow x \in (A\cap B)$. Donde concluímos que $X \subset (A \cap B)$.
+    A partir da 1$^a$ hipótese e da definição de inclusão, segue que: $x \in X \Rightarrow x \in A$ e $x \in X \Rightarrow x \in B$. Assim, todo elemento de X pertence também aos conjuntos A e B. Portanto, $x \in X \Rightarrow x \in A$ e $x \in B$. Logo, pela definição de interseção, $x \in X \Rightarrow x \in (A\cap B)$. Donde concluímos que $X \subset (A \cap B)$.
 
     \paragraph{2.}
     Sabemos que $\forall A$ e $\forall B$, $(A \cap B) \subset A$ e $(A \cap B) \subset B$. Da 2$^{a}$ hipótese, temos que $(A \cap B) \subset A$ e $(A \cap B) \subset B \Rightarrow (A \cap B) \subset X$. Portanto, $(A \cap B) \subset X$.
 
     \paragraph{}
-    De \textbf{1.} e \textbf{2.}, $X$ = $(A \cap B)$.
-    
+    De \textbf{1.} e \textbf{2.}, $X = (A \cap B)$.
+    \end{proof}
+
+
+    \subsection{Questão 3}
+    \begin{proof}
+    Provaremos inicialmente que $A \cap B = \emptyset \Leftrightarrow A \subset B^c$.
+
+    \paragraph{1. $\Rightarrow)$}
+    Suponhamos, por absurdo, que $A \not\subset B^c$. Neste caso, $\exists x | x \in A$ e $x \not\in B^c$. Mas, pela definição de complementar, $x \not\in B^c \Leftrightarrow x \in B$. Assim, $\exists x | x \in A$ e $x \in B \Rightarrow \exists x | x \in (A \cap B)$. Mas, por hipótese, $A \cap B = \emptyset$. Não pode existir tal $x$. Um absurdo gerado pela nossa suposição inicial. Portanto, $A \cap B = \emptyset \Rightarrow A \subset B^c$.
+
+    \paragraph{2. $\Leftarrow)$}
+    TODO
+
+    \paragraph{}
+    De \textbf{1.} e \textbf{2.}, $A \cap B = \emptyset \Leftrightarrow A \subset B^c$.
     \end{proof}
         
 \end{document}
