@@ -88,7 +88,6 @@
     \begin{proof}
     Dividiremos a demonstração em duas partes: \textbf{1.} $A \cup B = E \Rightarrow A^c \subset B$ e \textbf{2.} $A^c \subset B \Rightarrow A \cup B = E$.
 
-
     \paragraph{1. $\Rightarrow$)}
     Suponhamos, por absurdo, que $A^c \not\subset B$. Neste caso, $\exists x| x \in A^c$ e $x \not\in B$. Como $x \not\in B \Leftrightarrow x \in B^c$, $\exists x| x \in A^c$ e $x \in B^c$. Assim, pela definição de interseção, $\exists x| x \in (A^c \cap B^c)$. Pela Lei de \textit{de Morgan}, $\exists x| x \in (A \cup B)^c$ e portanto, $\exists x | x \not\in (A \cup B)$. Uma contradição, pois $A \cup B = E$. Não pode existir um elemento que não esteja em $E$. Sendo assim, $A \cup B = E \Rightarrow A^c \subset B$.
 
@@ -97,8 +96,20 @@
     
     \paragraph{}
     De \textbf{1.} e \textbf{2.}, $A \cup B = E \Leftrightarrow A^c \subset B$.
-
     \end{proof}
+
+    \subsection{Questão 4}
+    \begin{proof}
+    Dividiremos a demonstração em duas partes: \textbf{1.} $A \subset B \Rightarrow A \cap B^c = \emptyset$ e \textbf{2.} $A \cap B^c = \emptyset \Rightarrow A \subset B$.
+
+    \paragraph{1. $\Rightarrow$)}
+    Suponhamos, por absurdo, que $A \cap B^c \not= \emptyset$. Neste caso, $\exists x | x \in (A \cap B^c)$. Pela definição de interseção, $\exists x | x \in A $ e $x \in B^c$. Como $x \in B^c \Leftrightarrow x \not\in B$, então $\exists x | x \in A $ e $x \not\in B$. Portanto, $A \not\subset B$. Mas $A \not\subset B$ e $A \subset B$ (hipótese) não podem ser verdadeiros ao mesmo tempo. Um absurdo gerado pela nossa suposição inicial. Logo, $A \subset B \Rightarrow A \cap B^c = \emptyset$.
+
+    \paragraph{2. $\Leftarrow$)}
+    asdf
+    \end{proof}
+
+
         
 \end{document}
 
