@@ -106,9 +106,11 @@
     Suponhamos, por absurdo, que $A \cap B^c \not= \emptyset$. Neste caso, $\exists x | x \in (A \cap B^c)$. Pela definição de interseção, $\exists x | x \in A $ e $x \in B^c$. Como $x \in B^c \Leftrightarrow x \not\in B$, então $\exists x | x \in A $ e $x \not\in B$. Portanto, $A \not\subset B$. Mas $A \not\subset B$ e $A \subset B$ (hipótese) não podem ser verdadeiros ao mesmo tempo. Um absurdo gerado pela nossa suposição inicial. Logo, $A \subset B \Rightarrow A \cap B^c = \emptyset$.
 
     \paragraph{2. $\Leftarrow$)}
-    asdf
+    Suponhamos, por absurdo, que $A \not\subset B$. Neste caso, $\exists x | x \in A $ e $x \not\in B$. Assim, $\exists x | x \in A$ e $x \in B^c$. Pela definição de interseção, $\exists x | x \in (A \cap B^c)$. Mas não pode existir tal $x$, pois por hipótese, $A \cap B^c = \emptyset$. Portanto, $A \cap B^c = \emptyset \Rightarrow A \subset B$.
+    
+    \paragraph{}
+    De \textbf{1.} e \textbf{2.}, $A \subset B \Leftrightarrow A \cap B^c = \emptyset$.
     \end{proof}
-
 
         
 \end{document}
