@@ -129,12 +129,22 @@
     \paragraph{2. $\Leftarrow$)}
     Suponhamos, por absurdo, que $A^c \not\subset X$. Neste caso, $\exists x | x \in A^c$ e $x \not\in X$. Por definição de complementar, $\exists x | x \in A^c$ e $x \in X^c$. Por definição de interseção, $\exists x | x \in (A^c \cap X^c)$. Por \textit{de Morgan}, $\exists x | x \in (A \cup B)^c$. E, novamente, pela definição de complementar, $\exists x | x \not\in (A \cup B)$. Uma contradição, pois parte da hipótese garante que $A \cup B = E$. Não pode existir tal x que não esteja em $E$. Assim, como o absurdo provém da nossa suposição inicial, concluímos que $A^c \subset X$.
 
-    
     \paragraph{}
     De \textbf{1.} e \textbf{2.}, $X = A^c$.
     \end{proof}
 
 
-        
+    \subsection{Questão 7}
+    Vamos provar inicialmente que $A \subset B \Rightarrow B \cap (A \cup C) = (B \cap C) \cup A, \forall C$.
+
+    \begin{proof}
+    Por distributividade, $B \cap (A \cup C) = (B \cap A) \cup (B \cap C)$. Como, por hipótese, $A \subset B$, então $B \cap A = A$. Assim, $(B \cap A) \cup (B \cap C) = A \cup (B \cap C)$. Por comutatividade, $A \cup (B \cap C) = (B \cap C) \cup A$. Como $C$ não possui nada em particular, temos que, $B \cap (A \cup C) = (B \cap C) \cup A$, $\forall C$.
+    \end{proof}
+
+    Agora, vamos provar que $\exists C | B \cap (A \cup C) = (B \cap C) \cup A \Rightarrow A \subset B$.
+    \begin{proof}
+    Se $B \cap (A \cup C) = (B \cap C) \cup A$, então $(B \cap C) \cup A \subset B \cap (A \cup C)$. Agora, consideremos um $x \in A$. Se $x \in A$, então $x \in (B \cap C) \cup A$. Mas, $(B \cap C) \cup A \subset B \cap (A \cup C)$, então, $x \in B \cap (A \cup C)$. Portanto, $x \in B$. Como todo $x$ em A também está em B, $A \subset B$.
+    \end{proof}
+
 \end{document}
 
