@@ -119,6 +119,22 @@
     Seja $A = \{1\}$, $B = \{2\}$ e $C = \{3\}$. Assim, $(A \cup B) \cap C = \emptyset$ e $A \cup(B \cap C) = \{1\}$. Logo, temos $(A \cup B) \cap C \not= A \cup (B \cap C)$.
 
 
+    \subsection{Questão 6}
+    \begin{proof}
+    Dividiremos a demonstração de $X = A^c$ em duas etapas: \textbf{1.} $X \subset A^c$ e \textbf{2.} $A^c \subset X$.
+
+    \paragraph{1. $\Rightarrow$)}
+    Suponhamos, por absurdo, que $X \not\subset A^c$. Neste caso, $\exists x | x \in X $ e $x \not\in A^c$. Sendo assim, por definição de complementar, $\exists x | x \in X$ e $x \in A$. Por definição de interseção, $\exists x | x \in (X \cap A)$. Mas, por hipótese, $A \cap X = \emptyset$, não pode existir tal $x$. Da contradição segue que, de fato, $X \subset A^c$.
+
+    \paragraph{2. $\Leftarrow$)}
+    Suponhamos, por absurdo, que $A^c \not\subset X$. Neste caso, $\exists x | x \in A^c$ e $x \not\in X$. Por definição de complementar, $\exists x | x \in A^c$ e $x \in X^c$. Por definição de interseção, $\exists x | x \in (A^c \cap X^c)$. Por \textit{de Morgan}, $\exists x | x \in (A \cup B)^c$. E, novamente, pela definição de complementar, $\exists x | x \not\in (A \cup B)$. Uma contradição, pois parte da hipótese garante que $A \cup B = E$. Não pode existir tal x que não esteja em $E$. Assim, como o absurdo provém da nossa suposição inicial, concluímos que $A^c \subset X$.
+
+    
+    \paragraph{}
+    De \textbf{1.} e \textbf{2.}, $X = A^c$.
+    \end{proof}
+
+
         
 \end{document}
 
