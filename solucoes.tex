@@ -146,5 +146,26 @@
     Se $B \cap (A \cup C) = (B \cap C) \cup A$, então $(B \cap C) \cup A \subset B \cap (A \cup C)$. Agora, consideremos um $x \in A$. Se $x \in A$, então $x \in (B \cap C) \cup A$. Mas, $(B \cap C) \cup A \subset B \cap (A \cup C)$, então, $x \in B \cap (A \cup C)$. Portanto, $x \in B$. Como todo $x$ em A também está em B, $A \subset B$.
     \end{proof}
 
+    
+    \subsection{Questão 8}
+    \begin{proof}
+    Dividiremos a demonstração em duas partes: \textbf{1.} $A = B \Rightarrow (A \cap B^c) \cup (A^c \cap B) = \emptyset$ e \textbf{2.} $(A \cap B^c) \cup (A^c \cap B) = \emptyset \Rightarrow A = B$.
+
+    \paragraph{1. $\Rightarrow$)}
+    Como $A = B$, então $(A \cap B^c) \cup (A^c \cap B) = (A \cap A^c) \cup (A^c \cap A)$. Mas, por comutatividade, $A \cap A^c = A^c \cap A$. Assim, $(A \cap A^c) \cup (A^c \cap A) = A \cap A^c$. Mas, nenhum elemento pode estar em um conjunto e em seu complementar ao mesmo tempo, portanto, $A \cap A^c = \emptyset$. Logo, $(A \cap B^c) \cup (A^c \cap B) = \emptyset$, quando $A = B$.
+
+    \paragraph{2. $\Leftarrow$)}
+    Suponhamos, por absurdo, que $A \not= B$. Assim, $A \not\subset B$ ou $B \not\subset A$.
+
+    \paragraph{}
+    No primeiro caso, $A \not\subset B \Rightarrow \exists x | x \in A$ e $x \not\in B$. Pela definição de complementar, $\exists x | x \in A$ e $x \in B^c$, e pela definição de interseção, $\exists x | x \in (A \cap B^c)$. Assim, $A \cap B^c \supset \{x\}$ e, por conseguinte, $(A \cap B^c) \cup (A^c \cap B) \supset \{x\}$. Logo, $(A \cap B^c) \cup (A^c \cap B) \not= \emptyset$. Uma contradição, pois, por hipótese, $(A \cap B^c) \cup (A^c \cap B) = \emptyset$. Portanto, $A \subset B$.
+
+    \paragraph{}
+    No segundo caso, $B \not\subset A \Rightarrow \exists x | x \in B$ e $x \not\in A$. Pela definição de complementar, $\exists x | x \in B$ e $x \in A^c$, e pela definição de interseção, $\exists x | x \in (B \cap A^c)$. Assim, $B \cap A^c \supset \{x\}$ e, por conseguinte, $(A \cap B^c) \cup (A^c \cap B) \supset \{x\}$. Logo, $(A \cap B^c) \cup (A^c \cap B) \not= \emptyset$. Uma contradição, pois, por hipótese, $(A \cap B^c) \cup (A^c \cap B) = \emptyset$. Portanto, $B \subset A$.
+
+    \paragraph{}
+    Em ambos os casos nossa suposição gerou absurdos. Logo, $(A \cap B^c) \cup (A^c \cap B) = \emptyset \Rightarrow A = B$.
+    \end{proof}
+
 \end{document}
 
