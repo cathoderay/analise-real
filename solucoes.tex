@@ -165,7 +165,46 @@
 
     \paragraph{}
     Em ambos os casos, nossa suposição gerou absurdos. Logo, $(A \cap B^c) \cup (A^c \cap B) = \emptyset \Rightarrow A = B$.
+
+    \paragraph{}
+    Assim, de \textbf{1.} e \textbf{2.}, $A = B \Leftrightarrow (A \cap B^c) \cup (A^c \cap B) = \emptyset$.
+
     \end{proof}
+
+
+    \subsection{Questão 9}
+    \begin{proof}
+    Dividiremos a demonstração em duas partes: \textbf{1.} $(A - B) \cup (B - A) \subset (A \cup B) - (A \cap B)$ e \textbf{2.} $(A \cup B) - (A \cap B) \subset (A - B) \cup (B - A)$.
+
+    \paragraph{1. $\Rightarrow$)}
+    Dado um $x \in (A - B) \cup (B - A)$. Pela definição de união, sabemos que $x \in (A - B)$ ou $x \in (B - A)$. 
+    
+    \paragraph{}
+    No primeiro caso, se $x \in (A - B)$, então $x \in A$ e $x \not\in B$. Mas, se $x \in A$, então, $x \in (A \cup B)$. Como $x \not\in B$, então $x \not\in (A \cap B)$. Assim, $x \in (A \cup B)$ e $x \not\in (A \cap B)$. Portanto, por definição de diferença, $x \in (A \cup B) - (A \cap B)$.
+
+    \paragraph{}
+    No segundo caso, se $x \in (B - A)$, então $x \in B$ e $x \not\in A$. Mas, se $x \in B$, então, $x \in (A \cup B)$. Como $x \not\in A$, então $x \not\in (A \cap B)$. Assim, $x \in (A \cup B)$ e $x \not\in (A \cap B)$. Portanto, por definição de diferença, $x \in (A \cup B) - (A \cap B)$.
+
+    \paragraph{}
+    Em qualquer caso, $(A - B) \cup (B - A) \subset (A \cup B) - (A \cap B)$.
+
+    \paragraph{2. $\Leftarrow$)}
+    Seja $x \in (A \cup B) - (A \cap B)$. Pela definição de diferença, $x \in (A \cup B)$ e $x \not\in (A \cap B)$. Se $x \in (A \cup B)$, então, pela definição de união, $x \in A $ ou $x \in B$. Vejamos cada caso.
+
+    \paragraph{}
+    Se $x \in A$, então, $x \not\in B$, pois $x \not\in (A \cap B)$. Portanto, $x \in (A - B)$. 
+    
+    \paragraph{}
+    Se $x \in B$, então, $x \not\in A$, pois $x \not\in (A \cap B)$. Portanto, $x \in (B - A)$.
+
+    \paragraph{}
+    Em qualquer caso, $(A \cup B) - (A \cap B) \subset (A - B) \cup (B - A)$. 
+    
+    \paragraph{}
+    De \textbf{1.} e \textbf{2.}, $(A - B) \cup (B - A) = (A \cup B) - (A \cap B)$.
+
+    \end{proof}
+
 
 \end{document}
 
