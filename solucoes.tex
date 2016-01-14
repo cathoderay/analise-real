@@ -202,7 +202,30 @@
     
     \paragraph{}
     De \textbf{1.} e \textbf{2.}, $(A - B) \cup (B - A) = (A \cup B) - (A \cap B)$.
+    \end{proof}
 
+
+    \subsection{Questão 10}
+    \begin{proof}
+    Dividiremos a demonstração em duas partes: \textbf{1.} $A \Delta B = A \Delta C \Rightarrow B \subset C$ e \textbf{2.} $A \Delta B = A\Delta C \Rightarrow C \subset B$.
+
+    \paragraph{1. $\Rightarrow$)}
+    Seja $x \in B$. Assim, $x \in (B - A)$ ou $x \in (A \cap B)$.
+
+    \paragraph{}
+    No primeiro caso, se $x \in (B - A)$, então $x \in (A - B) \cup (B - A)$. Pela definição de diferença simétrica ($\Delta$), $x \in A \Delta B$. E, por hipótese, $x \in A \Delta C$. Assim, novamente pela definição de $\Delta$, $x \in (A - C) \cup (C - A)$. Mas, se $x \in (B - A)$, então, $x \not\in (A - C)$. Assim, $x \in (C - A)$ e finalmente, temos que $x \in C$.
+
+    \paragraph{}
+    No segundo caso, se $x \in (A \cap B)$, então, $x \not\in (A \cup B) - (A \cap B)$. Mas, utilizando o resultado da questão 9, $x \not\in (A - B) \cup (B - A)$. Assim, pela definição de $\Delta$, $x \not\in A \Delta B$, e, por hipótese, $x \not\in A \Delta C$. Novamente, pela definição de $\Delta$, $x \not\in (A - C) \cup (C - A)$. Portanto, $x \not\in (A - C)$ e $x \not\in (C - A)$. Se $x \not\in (A - C)$, então, $x \not\in A$ ou $x \in C$. Mas, $x \in A$, pois $x \in (A \cap B)$. Logo, $x \in C$.
+
+    \paragraph{}
+    Assim, todo $x \in B \Rightarrow x \in C$. Logo, $B \subset C$.
+
+    \paragraph{2. $\Rightarrow$)}
+    Análogo ao item \textbf{1.}. Basta intercambiar $B$ com $C$.
+
+    \paragraph{}
+    De \textbf{1.} e \textbf{2.}, $A \Delta B = A \Delta C \Rightarrow B = C$.
     \end{proof}
 
 
