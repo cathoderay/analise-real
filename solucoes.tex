@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper]{report} 
+\documentclass[9pt,twocolumn,a4paper]{article} 
 \usepackage[portuges]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
@@ -253,6 +253,22 @@
     De \textbf{1.} e \textbf{2.}, para $A \not= \emptyset$, $A \times B = A \times C \Rightarrow B = C$.
     \end{proof}
 
+    
+    \subsection{Questão 11}
+    \paragraph{a) $(A \cup B) \times C = (A \times C) \cup (B \times C)$}
+    \begin{proof}
+    Dividiremos a nossa demonstração em duas partes: \textbf{1.} $(A \cup B) \times C \subset (A \times C) \cup (B \times C)$ e \textbf{2.} $(A \times C) \cup (B \times C) \subset (A \cup B) \times C$.
+
+    \paragraph{1.}
+    Seja $(x, y) \in (A \cup B) \times C$. Por definição de produto cartesiano, $x \in A \cup B$ e $y \in C$. Assim, $x \in A$ ou $x \in B$. Se $x \in A$, então $(x, y) \in A \times C$. Se $x \in B$, então $(x, y) \in B \times C$. Assim, qualquer que seja o caso, $(x, y) \in (A \times C) \cup (B \times C)$. Portanto, $(A \cup B) \times C \subset (A \times C) \cup (B \times C)$.
+
+    \paragraph{2.}
+    Seja $(x, y) \in (A \times C) \cup (B \times C)$. Assim, por definição de união, $(x, y) \in A \times C$ ou $(x, y) \in B \times C$. Mas, pela definição de produto cartesiano, temos, $x \in A$ e $y \in C$ ou $x \in B$ e $y \in C$ e portanto, $x \in A$ ou $x \in B$ e $y \in C$. Assim, pela definição de união, $x \in (A \cup B)$ e $y \in C$. Logo, $(x, y) \in (A \cup B) \times C$. Assim, $(A \times C) \cup (B \times C) \subset (A \cup B) \times C$.
+    
+    \paragraph{}
+    De \textbf{1.} e \textbf{2.}, $(A \cup B) \times C = (A \times C) \cup (B \times C)$.
+    \end{proof}
+    
 
 
 \end{document}
