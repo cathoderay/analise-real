@@ -123,10 +123,10 @@
     \begin{proof}
     Dividiremos a demonstração de $X = A^c$ em duas etapas: \textbf{1.} $X \subset A^c$ e \textbf{2.} $A^c \subset X$.
 
-    \paragraph{1. $\Rightarrow$)}
+    \paragraph{1.}
     Suponhamos, por absurdo, que $X \not\subset A^c$. Neste caso, $\exists x | x \in X $ e $x \not\in A^c$. Sendo assim, por definição de complementar, $\exists x | x \in X$ e $x \in A$. Por definição de interseção, $\exists x | x \in (X \cap A)$. Mas, por hipótese, $A \cap X = \emptyset$, não pode existir tal $x$. Da contradição segue que, de fato, $X \subset A^c$.
 
-    \paragraph{2. $\Leftarrow$)}
+    \paragraph{2.}
     Suponhamos, por absurdo, que $A^c \not\subset X$. Neste caso, $\exists x | x \in A^c$ e $x \not\in X$. Por definição de complementar, $\exists x | x \in A^c$ e $x \in X^c$. Por definição de interseção, $\exists x | x \in (A^c \cap X^c)$. Por \textit{de Morgan}, $\exists x | x \in (A \cup B)^c$. E, novamente, pela definição de complementar, $\exists x | x \not\in (A \cup B)$. Uma contradição, pois parte da hipótese garante que $A \cup B = E$. Não pode existir tal x que não esteja em $E$. Assim, como o absurdo provém da nossa suposição inicial, concluímos que $A^c \subset X$.
 
     \paragraph{}
@@ -176,7 +176,7 @@
     \begin{proof}
     Dividiremos a demonstração em duas partes: \textbf{1.} $(A - B) \cup (B - A) \subset (A \cup B) - (A \cap B)$ e \textbf{2.} $(A \cup B) - (A \cap B) \subset (A - B) \cup (B - A)$.
 
-    \paragraph{1. $\Rightarrow$)}
+    \paragraph{1.}
     Seja $x \in (A - B) \cup (B - A)$. Pela definição de união, sabemos que $x \in (A - B)$ ou $x \in (B - A)$. 
     
     \paragraph{}
@@ -188,7 +188,7 @@
     \paragraph{}
     Em qualquer caso, $(A - B) \cup (B - A) \subset (A \cup B) - (A \cap B)$.
 
-    \paragraph{2. $\Leftarrow$)}
+    \paragraph{2.}
     Seja $x \in (A \cup B) - (A \cap B)$. Pela definição de diferença, $x \in (A \cup B)$ e $x \not\in (A \cap B)$. Se $x \in (A \cup B)$, então, pela definição de união, $x \in A $ ou $x \in B$. Vejamos cada caso.
 
     \paragraph{}
@@ -209,7 +209,7 @@
     \begin{proof}
     Dividiremos a demonstração em duas partes: \textbf{1.} $A \Delta B = A \Delta C \Rightarrow B \subset C$ e \textbf{2.} $A \Delta B = A\Delta C \Rightarrow C \subset B$.
 
-    \paragraph{1. $\Rightarrow$)}
+    \paragraph{1.}
     Seja $x \in B$. Assim, $x \in (B - A)$ ou $x \in (A \cap B)$.
 
     \paragraph{}
@@ -221,7 +221,7 @@
     \paragraph{}
     Assim, em qualquer caso, $x \in B \Rightarrow x \in C$. Logo, $B \subset C$.
 
-    \paragraph{2. $\Rightarrow$)}
+    \paragraph{2.}
     Análogo ao item \textbf{1.}. Basta intercambiar $B$ com $C$. Assim, concluímos que $C \subset B$.
 
     \paragraph{}
@@ -238,7 +238,20 @@
     Vejamos um contra-exemplo para $A \cap B = A \cap C \Rightarrow B = C$. Seja $A = \{1, 2\}$, $B = \{2, 3\}$ e $C = \{2, 4\}$. Assim, $A \cap B = A \cap C = \{2\}$, mas $B \not= C$.
 
     \paragraph{$\times$)}
-    todo
+    Seja $A = \emptyset$, $B = \{1\}$ e $C = \{2\}$, temos que $A \times B = A \times C = \emptyset$, mas $B \not= C$. Portanto, para $A = \emptyset$ não temos $A \times B = A \times C \Rightarrow B = C$. Vejamos para o caso em que $A \not= \emptyset$.
+
+    \begin{proof}
+    Vamos demonstrar que para $A \not= \emptyset, A \times B = A \times C \Rightarrow B = C$. Para tanto, dividiremos a demonstração em duas partes: \textbf{1.} $A \times B = A \times C \Rightarrow B \subset C$ e \textbf{2.} $A \times B = A \times C \Rightarrow C \subset B$.
+
+    \paragraph{1.}
+    Suponhamos, por absurdo, que $B \not\subset C$. Neste caso, $\exists x | x \in B$ e $x \not\in C$. Como $A \not= \emptyset$, podemos tomar um $a \in A$ e formar um par $(a, x)$. Este par $(a, x) \in A \times B$, pois $a \in A$ e $x \in B$, mas não é verdade que $(a, x) \in A \times C$, pois $x \not\in C$. Assim, $A \times B \not= A \times C$, pois existe um elemento em $A \times B$ que não está em $A \times C$. Uma contradição. Segue, portanto, que $B \subset C$.
+
+    \paragraph{2.}
+    Suponhamos, por absurdo, que $C \not\subset B$. Neste caso, $\exists x | x \in C$ e $x \not\in B$. Como $A \not= \emptyset$, podemos tomar um $a \in A$ e formar um par $(a, x)$. Este par $(a, x) \in A \times C$, pois $a \in A$ e $x \in C$, mas não é verdade que $(a, x) \in A \times B$, pois $x \not\in B$. Assim, $A \times C \not= A \times B$, pois existe um elemento em $A \times C$ que não está em $A \times B$. Uma contradição. Segue, portanto, que $C \subset B$.
+
+    \paragraph{}
+    De \textbf{1.} e \textbf{2.}, para $A \not= \emptyset$, $A \times B = A \times C \Rightarrow B = C$.
+    \end{proof}
 
 
 
