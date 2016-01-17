@@ -277,6 +277,26 @@
     De \textbf{1.} e \textbf{2.}, $(A \cap B) \times C = (A \times C) \cap (B \times C)$.
     \end{proof}
 
+    \paragraph{c) $(A - B) \times C = (A \times C) - (B \times C)$}
+    \begin{proof} 
+    Dividiremos nossa demonstração em duas partes: \textbf{1.} $(A - B) \times C \subset (A \times C) - (B \times C)$ e \textbf{2.} $(A \times C) - (B \times C) \subset (A - B) \times C$.
+
+    \paragraph{1.}
+    Seja $(x, y) \in (A - B) \times C$. Pela definição de produto cartesiano, $x \in (A - B)$ e $y \in C$. Pela definição de diferença, $x \in A$ e $x \not\in B$. Assim, o par $(x, y) \in A \times C$ e $(x, y) \not\in B \times C$. Segue, portanto, da definição de diferença, que $(x, y) \in (A \times C) - (B \times C)$. Logo, $(A - B) \times C \subset (A \times C) - (B \times C)$.
+
+    \paragraph{2.}
+    Seja $(x, y) \in (A \times C) - (B \times C)$. Pela definição de diferença, $(x, y) \in (A \times C)$ e $(x, y) \not\in (B \times C)$. Da definição de produto cartesiano, ($x \in A$ e $y \in C$) e ($x \not\in B$ ou $y \not\in C$), que podemos reescrever como $x \in A$ e $x \not\in B$ e $y \in C$. E, pela definição de diferença, temos $x \in (A - B)$ e $y \in C$. Portanto, da definição de produto cartesiano, $(x, y) \in (A - B) \times C$. Logo, $(A \times C) - (B \times C) \subset (A - B) \times C$.
+
+    \paragraph{}
+    De \textbf{1.} e \textbf{2.}, $(A - B) \times C = (A \times C) - (B \times C)$.
+    
+
+    \end{proof}
+
+    
+    
+
+
     
 
 
